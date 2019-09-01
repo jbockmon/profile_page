@@ -1,0 +1,17 @@
+.ContactDiv {
+   width: 200px;
+   text-align: left;
+   padding-left: 20px;
+}
+
+.ContactDiv ul {
+   padding-left: 0;
+}
+
+.ContactDiv ul li {
+   font-size: 14pt;
+}
+
+.ContactDiv ul li a:hover {
+   color: rgb(121, 194, 209);
+}

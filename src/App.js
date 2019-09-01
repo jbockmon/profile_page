@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import './App.css';
 
 import Layout from './containers/Layout/Layout';
 import Experience from './containers/Experience/Experience';

@@ -1,0 +1,35 @@
+.SplashDiv {
+   background-color: rgb(242, 247, 248);
+   border-top: 1px solid rgb(193, 206, 209);
+   border-bottom: 1px solid rgb(193, 206, 209);
+   padding: 20px 0px 40px 0px;
+}
+
+.SplashDiv > img {
+   height: 150px;
+   width: 150px;
+   border: 3px solid rgb(193, 206, 209);
+   border-radius: 50%;
+}
+
+.SplashDiv em {
+   color: rgb(121, 194, 209)
+}
+
+.SplashTop {
+   font-size: 28pt;
+   margin-right: 250px;
+   line-height: 1;
+}
+
+.SplashMid {
+   font-size: 54pt;
+   line-height: .01;
+   z-index: 50;
+}
+
+.SplashBot {
+   font-size: 28pt;
+   margin-left: 200px;
+   line-height: 1;
+}
