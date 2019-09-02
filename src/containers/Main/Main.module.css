@@ -10,3 +10,15 @@
    justify-content: center;
 
 }
+
+.SplashTop {
+   font-size: 28pt;
+   margin-right: 250px;
+   line-height: 1;
+}
+
+.SplashBot {
+   font-size: 28pt;
+   margin-left: 200px;
+   line-height: 1;
+}

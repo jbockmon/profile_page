@@ -1,14 +1,12 @@
 import React from 'react';
 import classes from './Splash.module.css';
-import splashImg from '../../assets/jasonAndFinleySmall.png';
 
-const Splash = () => {
+const Splash = (props) => {
    return (
       <div className={classes.SplashDiv}>
-         <img src={splashImg} alt={'Jason and Finley'}/>
-         <h1>Jason Bockmon</h1>
-         <span className={classes.SplashTop}>Full Stack <em>Node.js</em></span> <br/>
-         <span className={classes.SplashBot}><em>React</em> Developer</span>
+         <img src={props.image} alt={props.imgAlt}/>
+         <h1>{props.title}</h1>
+         {props.children}
       </div>  
    );
 }
