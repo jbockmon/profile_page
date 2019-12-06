@@ -5,6 +5,10 @@
    padding: 20px 0px 40px 0px;
 }
 
+.SplashDiv > h1 {
+   font-size: 28pt;
+}
+
 .SplashDiv > img {
    height: 150px;
    width: 150px;
@@ -12,7 +16,14 @@
    border-radius: 50%;
 }
 
+.SplashDiv > p {
+   font-size: 24pt;
+   color: rgb(102, 102, 102);
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+
 .SplashDiv em {
-   color: rgb(121, 194, 209)
+   color: rgb(121, 194, 209);
 }
 

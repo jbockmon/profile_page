@@ -11,12 +11,10 @@ import classes from './Main.module.css';
 const Main = () => {
    return (
       <div className={classes.MainDiv}>
-         <div className={classes.UpperMain}>
-            <Splash title={'Jason Bockmon'} image={aboutImg} imgAlt={'Jason and Finley'}>
-               <span className={classes.SplashTop}>Full Stack <em>Node.js</em></span> <br/>
-               <span className={classes.SplashBot}><em>React</em> Developer</span>
-            </Splash>
-         </div>
+         <Splash title={'Jason Bockmon'} image={aboutImg} imgAlt={'Jason and Finley'}>
+            <p className={classes.SplashTop}>Full Stack <em>Node.js</em></p> 
+            <p className={classes.SplashBot}><em>React</em> Developer</p>
+         </Splash>
          <div className={classes.LowerMain}>
             <About/>
             <Contact/>

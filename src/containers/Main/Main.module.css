@@ -8,17 +8,15 @@
    flex-direction: row;
    flex-wrap: nowrap;
    justify-content: center;
-
 }
 
 .SplashTop {
-   font-size: 28pt;
+   width: 100%;
    margin-right: 250px;
    line-height: 1;
 }
 
 .SplashBot {
-   font-size: 28pt;
    margin-left: 200px;
    line-height: 1;
 }

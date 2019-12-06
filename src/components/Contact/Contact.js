@@ -11,8 +11,8 @@ const Contact = () => {
          <ul>
             <li><a href={'https://github.com/jbockmon/'}><FaGithubSquare/> Github</a></li>
             <li><a href={'https://www.linkedin.com/in/jason-bockmon/'}><FaLinkedin/> Linked In</a></li>
-            <li><a href={''}><FaEnvelopeSquare/> Email</a></li>
-            <li><a href={''}><FaFileAlt/> Resume</a></li>
+            <li><a href={'/temp'}><FaEnvelopeSquare/> Email</a></li>
+            <li><a href={'/temp'}><FaFileAlt/> Resume</a></li>
          </ul>
       </div>
       </IconContext.Provider>
