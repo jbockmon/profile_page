@@ -4,6 +4,7 @@ import classes from './ListModule.module.css';
 // Required format:
 //    title: '',
 //    summary: '',
+//    role: '',
 //    techSpecs: [''],
 //    detail: '',
 //    requirements: ['']  
@@ -33,7 +34,7 @@ const ListModule = (props) => {
       <div className={classes.ListModuleDiv}>
          <h2>{props.modObj.title}</h2>
          <h3>{props.modObj.summary}</h3>
-
+         <h4>Role: {props.modObj.role}</h4>
          <h4>Project Scenario:</h4>
          <p>{props.modObj.detail}</p>
 

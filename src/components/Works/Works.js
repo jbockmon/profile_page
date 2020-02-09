@@ -8,6 +8,7 @@ const Works = () => {
    let dcim = {
       title: 'DCIM and Service Platform',
       summary: 'Site level Data Center Infrastructure Management interface with additional service capabilities.',
+      role: 'Sole Architect, Engineer, Developer, DBA, UI Designer, QA, and DevOps',
       techSpecs: [
          'Nodejs back end',
          'Express based RESTful API',
@@ -17,7 +18,7 @@ const Works = () => {
          'Postgres database',
          'Modbus/IP polling'
       ], 
-      detail: 'The new PLC architecture required a data aggregation system and service platform. The platform also had to allow for secure remote accessibility.',
+      detail: 'New PLC architecture required a data aggregation system and service platform. The platform also had to allow for secure remote accessibility.',
       requirements: [
          'Able to integrate any number of PLCs',
          'DHCP server to provide local network to all connected PLCs',
@@ -32,6 +33,7 @@ const Works = () => {
    let newPlc = {
       title: 'PLC System Redesign',
       summary: 'Creation and transition to new PLC based architecture.',
+      role: 'Sole Architect, Engineer, Developer, QA, and DevOps',
       techSpecs: [
          'Structured Text based implementation',
          'Ladder logic and FBD PID',
@@ -53,6 +55,7 @@ const Works = () => {
    let localMonSys = {
       title: 'Local Monitoring System and Interface',
       summary: 'A monitoring and alert system with a web based GUI to report and interact with a control system.',
+      role: 'Sole Architect, Engineer, Developer, DBA, UI Designer, QA, and DevOps',
       techSpecs: [
          'Nodejs back end',
          'Express based RESTful API',
