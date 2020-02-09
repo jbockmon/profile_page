@@ -5,30 +5,48 @@ import ListModule from '../ListModule/ListModule';
 import classes from './Works.module.css';
 
 const Works = () => {
-   let edcim = {
-      title: 'Data Center Infrastructure Management (DCIM)',
-      summary: 'A DCIM used to aggregate and display the status of PLC based control systems.',
+   let dcim = {
+      title: 'DCIM and Service Platform',
+      summary: 'Site level Data Center Infrastructure Management interface with additional service capabilities.',
       techSpecs: [
          'Nodejs back end',
-         'PostgreSQL database',
          'Express based RESTful API',
-         'JWT based authentication',
-         'Python based data processing',
          'React front end',
-      ],
-      detail: 'I was asked to engineer, develop, and deploy a brand new platform from which we would host site level DCIMs. This was to be reproducable and repidly deplyable for each site that would house our new PLC based systems.',
+         'React Timeseries Charts data visualization',
+         'OpenVPN server',
+         'Postgres database',
+         'Modbus/IP polling'
+      ], 
+      detail: 'The new PLC architecture required a data aggregation system and service platform. The platform also had to allow for secure remote accessibility.',
       requirements: [
-         'Software agnostic to host operating system',
-         'Self hosted DHCP server to control private network',
-         'Data aggregation of onsite PLC based control systems',
-         'Display stats and graphs populated with dynamically updating realtime information',
-         'PostgreSQL database',
-         'Administration of individual systems from the DCIM',
-         'Role based authentication system',
-         'Ability to add new users, admins, control systems',
-         'Email alerting system with >99% uptime and reliability',
-         'PagerDuty integration',
-         'Mobile Responsive'
+         'Able to integrate any number of PLCs',
+         'DHCP server to provide local network to all connected PLCs',
+         'OpenVPN server to allow access to both the DCIM platform as well as all local PLCs with Schneider proprietary software',
+         'Update and alert data transmission resilience through lost internet connections',
+         'Advanced diagnostic capabilities that catch out of spec conditions as well as future conditions through trend analysis',
+         'Web API + Modbus + SNMP + Bacnet servers for integration with existing customer infrastructure',
+         'Ability to interface with multiple cloud DCIM providers including Schneider Machine Advisor'
+      ]
+   }
+
+   let newPlc = {
+      title: 'PLC System Redesign',
+      summary: 'Creation and transition to new PLC based architecture.',
+      techSpecs: [
+         'Structured Text based implementation',
+         'Ladder logic and FBD PID',
+         'Modbus RTU controlled pump drives',
+         'Modbus over IP register server'
+      ],
+      detail: 'Management decided to switch the flagship product from a custom x86 design with dated hardware and software to a modern PLC solution that monitors various sensors and adjusts controllers to cool servers in a liquid cooling environment.',
+      requirements: [
+         '>99% uptime',
+         '2N reliability',
+         'Runs 3 independent PIDs, controlling coolant flow, water flow, and secondary systems',
+         'Integration with Schneider VFDS',
+         'Self diagnosing and self correcting diagnostics',
+         'Able to run completely independently or able to integrate into a DCIM',
+         'Single codebase must run all products without custom configuration'
       ]
    };
 
@@ -53,7 +71,8 @@ const Works = () => {
 
    return (
       <div className={classes.WorksDiv}>
-         <ListModule modObj={edcim}/>
+         <ListModule modObj={dcim}/>
+         <ListModule modObj={newPlc}/>
          <ListModule modObj={localMonSys}/>
       </div>
    );
