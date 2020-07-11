@@ -1,6 +1,26 @@
 .ListModuleDiv {
    margin-top: 20px;
-   padding-bottom: 20px;
+   padding: 0px;
    max-width: 800px;
-   border-bottom: 2px solid #e2e2e2;
+   border: 2px solid #e2e2e2;
+}
+
+.ListModuleDiv h2 {
+   background-color: rgb(242, 247, 248);
+   border-bottom: 1px solid #e2e2e2;
+   margin: 0px;
+   padding: 10px 0px 10px 0px;
+}
+
+.ListModuleDiv .ListModuleBody {
+   text-align: left;
+   padding:20px;
+}
+
+.ListModuleDiv section {
+   margin-bottom: 20px;
+}
+
+.ListModuleDiv h4 {
+   margin-bottom: 0px;
 }
