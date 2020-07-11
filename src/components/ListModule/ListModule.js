@@ -33,16 +33,30 @@ const ListModule = (props) => {
    return(
       <div className={classes.ListModuleDiv}>
          <h2>{props.modObj.title}</h2>
-         <h3>{props.modObj.summary}</h3>
-         <h4>Role: {props.modObj.role}</h4>
-         <h4>Project Scenario:</h4>
-         <p>{props.modObj.detail}</p>
-
-         <h4>Technical Detail Listing:</h4>
-         {techSpecList}
-
-         <h4>Requirements</h4>
-         {reqList}
+         <div className={classes.ListModuleBody}>
+            <section>
+               <b>Summary: </b>
+               {props.modObj.summary}
+            </section>
+            <section>
+               <b>Role: </b>
+               {props.modObj.role}
+            </section>        
+            <section>
+               <h4>Stack and Technologies:</h4>
+               {techSpecList}
+            </section>
+            <section>
+               <h4>Requirements:</h4>
+               {reqList}
+            </section>
+            <section>
+               <b>Project Details: </b>
+               {props.modObj.detail}
+            </section>
+         </div>
+         
+         
       </div>
    );
 }
